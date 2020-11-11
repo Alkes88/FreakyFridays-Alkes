@@ -1,7 +1,7 @@
 body {
   font-family: Arial, Helvetica sans-serif;
   margin: 0;
-  background: #f9e29c;
+  background: #f9e29e;
   height: auto;
 }
 
@@ -22,21 +22,21 @@ h2{
 img {
   display: block;
   width: 100%;
-  height: auto;
 }
 
 main {
   max-width: 700px;
   margin: auto;
-  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.2),
-    -30px 0px 40px rgba(0,0,0,0.2);
+  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1),
+    -30px 0px 40px rgba(0,0,0,0.1);
 }
 
 landing {
-  background: #000000;
+  background: #ffffff;
 }
 
 .landing-text {
+  background: #ffffff;
   font-family: Copperplate;
   display: flex;
   flex: 0 1 400vw;
@@ -53,7 +53,6 @@ landing-text h2 {
 }
 
 landing-image {
-  background: url("./img/pexels-lukas-616401.jpg");
   width: 100vh;
   background-position: center;
   background-size: cover;
@@ -61,21 +60,6 @@ landing-image {
   height: 50vh;
   flex: 0 1 60vw;
   margin: 0;
-}
-
-.btn {
-  padding: 0.5rem 2rem;
-  border: 1px #ccc solid;
-  display: inline-block;
-  margin: 2rem 0 0;
-  border-radius: 50px;
-  text-decoration: none;
-  color: #333;
-  transition: background 500ms ease;
-}
-
-.btn:hover {
-  background: #f4f4f4;
 }
 
 #header {
@@ -94,20 +78,22 @@ landing-image {
 }
 
 .caption {
-  background: #FFFDD0;
-  padding: 1rem;
+  background: #ffffff;
+  padding-left: 1rem;
+  padding-right: 1rem;
   text-align: center;
+  border: 1px #000 groove;
 }
 
 footer {
   text-align: center;
   padding: 1.5rem 1rem;
   margin: auto;
-  color: #333;
+  color: #222;
 }
 
 footer h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 0;
 }
 
@@ -116,14 +102,33 @@ h6{
 }
 
 .text{
-  background: #000000;
+  position: relative;
+  background-color: #000000;
   text-align: center;
-  border: 0.1px #ccc solid;
+  border: 0.1px #000 solid;
 }
 
 .about-text{
   text-align: center;
-  padding: 30px;
+}
+
+a:default{
+  color: white;
+}
+
+a:active{
+  color: white;
+}
+
+a:hover{
+  color: white;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: none;
 }
 
 @media (min-width: 500px) {
@@ -140,8 +145,3 @@ h6{
     height: 100vh;
   }
 }
-
-@media (min-width: 700px) {
-  .btn {
-    padding: 1rem 3rem;
-  }
